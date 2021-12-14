@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng101';
+  parentCount = 0;
+
+  addParentCount(){
+    this.parentCount++;
+  }
+  clearInParent(val : any){
+    this.parentCount = val;
+  }
 }
